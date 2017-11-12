@@ -30,3 +30,8 @@ $ node --version
 
 
 
+下载node.js
+···
+nvm unintall 8.0.0
+//如果正在运行node会报错，暂时还没有找到解决办法
+···
