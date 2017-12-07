@@ -12,7 +12,7 @@
 在route.page.js增加路由'/posts/create'的处理
 
 ```javascript
-/* GET posts edit page. */
+/* GET posts create page. */
 router.get('/posts/create', function(req, res, next) {
   res.render('create');
 });
@@ -107,7 +107,7 @@ router.post('/posts/create', function (req, res, next) {
 
 事实上完全可以设计不同的路由地址加以区分，但没有用HTTP的请求方法区分方便。
 
-## 事例
+## 实例
 
-参考事例 [first-app-sample-7](https://github.com/xugy0926/learn-webapp-sample/tree/master/first-app-sample-7)
+参考 [first-app-sample-7](https://github.com/xugy0926/learn-webapp-sample/tree/master/first-app-sample-7)
 

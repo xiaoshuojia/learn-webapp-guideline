@@ -1,6 +1,6 @@
 # 添加文章编辑页面
 
-创建文章后，都会提供再编辑文章的功能。这个功能需要设计两个路由。一个用户访问编辑页面，另一个用于提交修改信息。
+创建文章后，都会提供再编辑文章的功能。这个功能需要设计两个路由。一个用于访问编辑页面，另一个用于提交修改信息。
 
 ## 页面
 
@@ -143,8 +143,8 @@ created () {
   }
 ```
 
-这样就保证html加载时，回去根据id抓取文章内容。
+这样就保证html加载时，会去根据id抓取文章内容。
 
-## 事例
+## 实例
 
-参考事例 [first-app-sample-12](https://github.com/xugy0926/learn-webapp-sample/tree/master/first-app-sample-12)
+参考 [first-app-sample-12](https://github.com/xugy0926/learn-webapp-sample/tree/master/first-app-sample-12)
