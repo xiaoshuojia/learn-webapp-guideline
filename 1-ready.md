@@ -30,6 +30,7 @@ $ node --version
 
 
 
+<<<<<<< HEAD
 #### 3.卸载Node.js
 
 ```bash
@@ -39,3 +40,10 @@ $ nvm unintall 8.1.1
 
 
 
+=======
+下载node.js
+```
+nvm unintall 8.0.0
+//如果正在运行node会报错，暂时还没有找到解决办法
+```
+>>>>>>> 26379714fc2ce5c6cb681f4f13e7047df077419d
