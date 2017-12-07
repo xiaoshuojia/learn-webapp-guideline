@@ -36,7 +36,7 @@ router.get('/list', function(req, res, next) {
 
 在./views/posts.ejs中添加&lt;script&gt;代码来获得postsList并更新页面。
 
-```
+```js
 <script>
   var vm = new Vue({
     el: '#app',

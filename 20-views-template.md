@@ -2,13 +2,13 @@
 
 以下是前面构建的所有页面。
 
-页面|说明
----|---
-views/create.ejs | 新建文章页面
-views/edit.ejs | 编辑文章页面
-views/index.ejs | 主页面
-views/posts.ejs | 文章列表页面
-views/show.ejs | 显示文章页面
+| 页面               | 说明     |
+| ---------------- | ------ |
+| views/create.ejs | 新建文章页面 |
+| views/edit.ejs   | 编辑文章页面 |
+| views/index.ejs  | 主页面    |
+| views/posts.ejs  | 文章列表页面 |
+| views/show.ejs   | 显示文章页面 |
 
 这些页面都是独立的html页面，随着业务的复杂，不断的添加页面，意味着要不断的新建页面。有没有发现一个问题，每个页面很多内容是重复的，比如`<html><head><body>`。
 

@@ -84,7 +84,7 @@ app.use('/', page);
 app.use('/api', api);
 ```
 
-因为把'/posts/list'路由改成了'/api/posts'，所以./views/posts.ejs中请求posts数据的url也要修改。
+因为把'/posts/list'路由改成了'/api/posts'，所以./views/posts.~ejs中请求posts数据的url也要修改。
 
 ```
 fetchData () {

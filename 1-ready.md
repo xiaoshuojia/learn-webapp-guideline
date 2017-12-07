@@ -30,3 +30,12 @@ $ node --version
 
 
 
+#### 3.卸载Node.js
+
+```bash
+$ nvm unintall 8.1.1
+//Uninstalled node v8.1.1	即，卸载成功
+```
+
+
+
