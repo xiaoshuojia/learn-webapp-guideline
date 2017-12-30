@@ -54,7 +54,7 @@ app.use(auth.authUser);
 ```
 
 改造 authUser 函数。
-之前，该函数用于与对 Cookie 信息读取并找到对用的用户信息。
+之前，该函数用于与对 Cookie 信息读取并找到对应的用户信息。
 现在，我们增加了一个分支的判断，即先对 req.session 进行判断，如果 req.session里有 user 信息，那么就用这个，并赋值给 res.locals.currentUser。
 
 注：res.locals.currentUser 这个对象是给 ejs 构建页面时使用的。

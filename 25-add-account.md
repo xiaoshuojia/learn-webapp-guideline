@@ -182,7 +182,7 @@ var vm = new Vue({
 #### 添加登录和注册的 HTTP 请求处理
 
 1. 安装 bcrypt 并引入模块
-`$ npm install --save bcrypt`
+  `$ npm install --save bcrypt`
 
 ```js
 // filepath: route.api.js
