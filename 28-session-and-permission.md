@@ -77,9 +77,8 @@ function authUser(req, res, next) {
         if (err || !user) {
           next();
         } else {
-          if (user.loginname === config.admin) {
-            user.isAdmin = true;
-          }
+          user = user.toObject();
+          user.isAdmin = user.loginname === config.admin;
 
           req.session.user = user;
           res.locals.currentUser = user;
@@ -100,9 +99,8 @@ function authUser(req, res, next) {
 ```js
 //filepath: ./middlewares/auth.js auth
 
-if (user.loginname === config.admin) {
-  user.isAdmin = true;
-}
+user = user.toObject();
+user.isAdmin = user.loginname === config.admin;
 
 req.session.user = user;
 res.locals.currentUser = user;
@@ -135,7 +133,7 @@ function adminRequired(req, res, next) {
 
 现在既可以把用户信息存在 session 里，也拥有了一个判断是否为管理员权限的中间件。
 
-我们最需要把 adminRequired 恰当的位置自己可。
+我们只需要把 adminRequired 放在恰当的位置即可。
 
 比如只有管理员权限的用户才能打开新建文章页面。
 
